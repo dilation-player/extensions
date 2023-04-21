@@ -1,0 +1,22 @@
+/* ============ CSS for logo =============== */
+.dp .dp-logo {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  height: 7%;
+  z-index: 9;
+  opacity: 0.7;
+  cursor: pointer;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.dp .dp-logo.active {
+  display: block;
+}
+
+.dp .dp-logo:hover {
+  opacity: 1
+}

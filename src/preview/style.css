@@ -1,0 +1,21 @@
+
+.dp .dp-panel .dp-progress .dp-progress-tooltip-image {
+  display: none;
+  background: rgba(0, 0, 0, 0.6) no-repeat center;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 1;
+  top: -8.5em;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.dp .dp-panel .dp-progress:hover .dp-progress-tooltip-image.active {
+  display: inline-block;
+}

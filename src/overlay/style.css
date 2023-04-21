@@ -1,0 +1,55 @@
+
+/* CSS for purdah */
+.dp .dp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+
+.dp .dp-overlay > div{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dp .dp-overlay > div.active {
+  display: block;
+}
+
+.dp .dp-overlay .dp-overlay-icon {
+  text-align: center;
+  position: relative;
+  top: 45%;
+  color: #fff;
+  margin: auto;
+  display: block;
+  width: 100px;
+}
+
+.dp .dp-overlay .dp-overlay-player-icon>* {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2px 1px 2px 3px;
+  width: 40px;
+  color: #fff;
+}
+
+.dp .dp-overlay path {
+  fill: #ffffff;
+}
+
+.dp .dp-overlay .dp-overlay-icon .spinner-border {
+  --bs-spinner-border-width: 2px;
+  --bs-spinner-width: 40px;
+  --bs-spinner-height: 40px;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,21 @@
+.dp .dp-subtitles{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  // text-align: center;
+  transition: all 0.2s ease;
+}
+
+.dp .dp-subtitles.active{
+  bottom: 50px;
+}
+
+.dp .dp-subtitles > div {
+  width: fit-content;
+  margin: 0 auto 5px auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3px 15px;
+  font-size: 0.9rem;
+  max-width: 60%;
+}

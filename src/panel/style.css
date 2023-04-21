@@ -1,0 +1,79 @@
+
+/* ============ CSS for controls =============== */
+.dp .dp-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  height: 7%;
+  min-height: 50px;
+  max-height: 60px;
+  // transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+.dp .dp-panel.active {
+  // transform: translateY(0);
+  opacity: 1;
+}
+/* ======================= CSS for button ========================== */
+.dp .dp-panel .dp-control {
+  height: 88%;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  width: 100%;
+  position: relative;
+}
+
+.dp .dp-panel .dp-control>div {
+  height: 100%;
+  position: relative;
+  transition: all 0.2s linear;
+  width: 98%;
+  margin: auto;
+}
+
+.dp .dp-panel .dp-control>div:after,
+.dp .dp-panel .dp-control .dp-group:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.dp .dp-panel .dp-control .dp-group {
+  height: 100%;
+  position: relative;
+  display: inline-flex;
+}
+
+.dp .dp-panel .dp-control button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: 0;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 100%;
+  transition: opacity .1s cubic-bezier(0.4, 0.0, 1, 1);
+  line-height: inherit;
+  padding: 0;
+}
+
+.dp .dp-panel .dp-control button path {
+  fill: #ffffff;
+}
+
+.dp .dp-panel .dp-control button.dp-timer {
+  font-size: 0.8em;
+}
+
+.dp-control .right{
+  float: right;
+}
+
+.dp-control .left{
+  float: left;
+}

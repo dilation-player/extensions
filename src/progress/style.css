@@ -1,0 +1,89 @@
+
+/* CSS for PROGRESS */
+.dp .dp-panel .dp-progress {
+  width: 98%;
+  position: relative;
+  height: 12%;
+  cursor: pointer;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-line {
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+  transition: all 0.2s linear;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.dp .dp-panel .dp-progress:hover .dp-progress-line {
+  height: 100%;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-line>div {
+  height: 100%;
+  width: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-line .dp-progress-line-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  z-index: 1;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-line .dp-progress-line-playing {
+  background-color: #FF5722;
+  z-index: 4;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-line .dp-progress-line-loading {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 0%;
+  z-index: 2;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-tooltip-text {
+  display: none;
+  // background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -2em;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0);
+}
+
+.dp .dp-panel .dp-progress:hover .dp-progress-tooltip-text.active {
+  display: inline-block;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-tooltip-line {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #ff9c7e;
+  z-index: 3;
+}
+
+.dp .dp-panel .dp-progress .dp-progress-tooltip-line:not(.active) {
+  display: none;
+}

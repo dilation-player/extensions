@@ -1,0 +1,50 @@
+
+.dp .dp-panel .dp-control .dp-volume-tooltip {
+  transition: all 0.2s linear;
+  opacity: 0;
+  width: 0;
+  display: inline-flex;
+  padding-right: 5px;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.dp .dp-panel .dp-control .dp-group:hover .dp-volume-tooltip {
+  width: 100px;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+/* Custom range */
+.dp .dp-panel .dp-control .dp-group .dp-volume-range {
+  width: 90px;
+  opacity: 0.7;
+  transition: opacity .2s;
+  height: 7%;
+  background: #fff;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.dp .dp-panel .dp-control .dp-group .dp-volume-range:hover {
+  opacity: 1;
+}
+
+.dp .dp-panel .dp-control .dp-group .dp-volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #FF5722;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dp .dp-panel .dp-control .dp-group .dp-volume-range::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #FF5722;
+  cursor: pointer;
+  border-radius: 50%;
+}
