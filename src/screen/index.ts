@@ -59,7 +59,7 @@ class ControlScreen {
     this.handleFullScreen(option);
     this.handleMediumScreen(option);
     this.handleNormalScreen(option);
-    let isFullScreen = document.fullscreenEnabled;
+    let isFullScreen = document.fullscreenElement;
 
     if (option == 'medium' || option == 'normal') this.state.default = option;
 
@@ -73,7 +73,7 @@ class ControlScreen {
   handleFullScreen(option: any) {
     if (!this.screenConfig.options.includes('full') || option !== 'full') return;
 
-    let isFullScreen = document.fullscreenEnabled;
+    let isFullScreen = document.fullscreenElement;
     let container = this.container.dom();
 
     container.requestFullScreen = container.requestFullScreen || container.webkitRequestFullScreen || container.mozRequestFullScreen || function () {
@@ -107,10 +107,7 @@ class ControlScreen {
     let elBtnActualScreen = this.context.$config.node('controlActualScreen');
 
     // For full button
-    // let isFull = document.fullscreenElement
-    //     || document.mozFullScreenElement
-    //     || document.webkitFullscreenElement;
-    let isFullScreen = document.fullscreenEnabled || false;
+    let isFullScreen = document.fullscreenElement;
 
     if (isFullScreen) {
       elBtnFullScreen.html(this.icons.actualScreen);
