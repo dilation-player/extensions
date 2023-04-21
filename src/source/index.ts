@@ -43,7 +43,7 @@ class Source {
     });
   }
 
-  appendSource({src, type}){
+  appendSource({src, type}: any){
     let source = document.createElement('source');
     helper.node(source).attr({ src, type });
     this.playerDom.append(source);
@@ -58,7 +58,7 @@ class Source {
     if (this.source.meta) {
       // Check if is multi source
       if (this.source.meta.length > 1) {
-        this.source.meta.forEach((item) => {
+        this.source.meta.forEach((item: any) => {
           this.appendSource(item);
         });
       }
@@ -69,7 +69,7 @@ class Source {
         // Check if is stream video
         if (item.stream) {
           const mediaSource = new MediaSource();
-          let sourceBuffer = null;
+          let sourceBuffer: any = null;
 
           mediaSource.addEventListener("sourceopen", () => {
             if (type == 'video') sourceBuffer = mediaSource.addSourceBuffer(item.type);

@@ -1,7 +1,7 @@
 {
-  "name": "@dilation-player/view",
-  "description": "View extension use in Dilation Player",
-  "version": "1.0.1",
+  "name": "@dilation-player/extensions",
+  "description": "Extensions use in Dilation Player",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
