@@ -1,8 +1,9 @@
 .dp .dp-panel .dp-control button.dp-btn-actualscreen,
 .dp .dp-panel .dp-control button.dp-btn-fullscreen {
   display: none;
+}
 
-  &.active{
-    display: unset;
-  }
+.dp .dp-panel .dp-control button.dp-btn-actualscreen.active,
+.dp .dp-panel .dp-control button.dp-btn-fullscreen.active {
+  display: unset;
 }
